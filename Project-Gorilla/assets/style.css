@@ -4,23 +4,72 @@ COLORS // FONTS in General
 
 
 
+/*===========================
+START //  Page/Layout
+============================*/
+body {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 /*===========================
-START //  Page/Layout
+NAV BAR
+============================*/
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: #d65842; 
+	font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+	color: #edffea;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 22px;
+}
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+}
+.nav-links li{
+	list-style: none;
+}
+.nav-links a{
+	color: #edffea;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+
+}
+.burger{
+	display: none;
+	cursor: pointer;
+}
+
+.burger div{
+width: 25px;
+height: 3px;
+background-color: #edffea;
+margin: 5px;
+transition: all 0.3s ease;
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+	background-color: rgb(248, 229, 166);
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px, -6px);
+	background-color:rgb(248, 229, 166);
+
+/*===========================
+MAIN PAGE
 ============================*/
