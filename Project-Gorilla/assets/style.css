@@ -1,21 +1,14 @@
 /*===========================
 COLORS // FONTS in General
+
+
+
+$font-family: 'Lemonada', cursive;
 ============================*/
-
-
-
-/*===========================
-START //  Page/Layout
-============================*/
-body {
-
-}
-
-
 /*===========================
 NAV BAR
 ============================*/
-nav{
+nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -24,21 +17,21 @@ nav{
 	font-family: 'Poppins', sans-serif;
 }
 
-.logo{
+.logo {
 	color: #edffea;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-size: 22px;
 }
-.nav-links{
+.nav-links {
 	display: flex;
 	justify-content: space-around;
 	width: 30%;
 }
-.nav-links li{
+.nav-links li {
 	list-style: none;
 }
-.nav-links a{
+.nav-links a {
 	color: #edffea;
 	text-decoration: none;
 	letter-spacing: 3px;
@@ -46,12 +39,12 @@ nav{
 	font-size: 14px;
 
 }
-.burger{
+.burger {
 	display: none;
 	cursor: pointer;
 }
 
-.burger div{
+.burger div {
 width: 25px;
 height: 3px;
 background-color: #edffea;
@@ -59,17 +52,70 @@ margin: 5px;
 transition: all 0.3s ease;
 }
 
-.toggle .line1{
+.toggle .line1 {
 	transform: rotate(-45deg) translate(-5px,6px);
 	background-color: rgb(248, 229, 166);
 }
-.toggle .line2{
+.toggle .line2 {
 	opacity: 0;
 }
-.toggle .line3{
+.toggle .line3 {
 	transform: rotate(45deg) translate(-5px, -6px);
 	background-color:rgb(248, 229, 166);
+}
+
 
 /*===========================
 MAIN PAGE
 ============================*/
+
+
+main { /* The main content area is at least 100vh tall.
+		Most sites are anyway, but just to be safe.
+		TLDR: du coup la page fait forcement 100vh. */
+	min-height: 100vh;
+	/* need a solid bg to hide the footer 1st. */
+	background: rgb(255, 255, 247);
+	/* The footer comes after the main content area in the HTML,
+	so to make sure the main content area sits on top,
+	you’ll need a little relative positioning and z-index.*/
+	position: relative;
+	z-index: 1;
+
+	/* petite marge interieure des blocs/textes, 
+	pour pas que ca colle les bordures de page*/
+	padding: 2rem;
+
+
+}
+body {
+    top: 0;
+	left: 0;
+	margin: 0;
+}
+
+header {
+    border: 1px solid black;
+}
+
+article {
+	border: 1px solid blue;
+}
+aside {
+	border: 1px solid grey;
+}
+footer {
+	/* footer position.placement */
+	left: 0;
+	bottom: 0;
+	position: sticky;
+	width: 100%;
+	
+	background: #252a47;
+
+	/* footer text in */
+	
+	color: aliceblue;
+	
+	display: grid;
+}
