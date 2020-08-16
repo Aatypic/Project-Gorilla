@@ -68,7 +68,9 @@ transition: all 0.3s ease;
 /*===========================
 MAIN PAGE
 ============================*/
-
+* {
+	box-sizing: border-box;
+}
 
 main { /* The main content area is at least 100vh tall.
 		Most sites are anyway, but just to be safe.
@@ -117,5 +119,8 @@ footer {
 	
 	color: aliceblue;
 	
-	display: grid;
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
+	padding: 50px;
 }

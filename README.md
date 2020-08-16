@@ -1,3 +1,8 @@
 # Project-Gorilla
 
-Les Idées:
+NOTES: 
+
+- Navbar Zack
+- Main+Footer Al
+
+
