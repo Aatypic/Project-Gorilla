@@ -169,6 +169,7 @@ FOOTER mid
 	/* pour reduire la taille du panier a 150px. meilleur rendu */
 	width: 150px;
 	height: 150px;
+	overflow: hidden;
 }
 
 .footer-mid :hover {
