@@ -12,7 +12,8 @@ idees
 -> creer les pages Concept. Video. Contact. Reservation
 -> mettre du contenu dans Concept. Video. Contact. Reservation
 
--> formulaire pour la page contact 
+-> formulaire pour la page contact
+
 -> Concept, aller voir sur hoops factory et 2.0 en faire un resume.
 
 
