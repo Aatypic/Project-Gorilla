@@ -18,7 +18,9 @@ idees
 
 
 ---IMPORTANT POUR LE main.js---
+
 ->voir a la fois la navbar en responsive ET footer !
+
 ---IMPORTANT POUR LE main.js---
 
 
