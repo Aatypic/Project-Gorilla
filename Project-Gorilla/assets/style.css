@@ -106,6 +106,17 @@ article {
 aside {
 	border: 1px solid grey;
 }
+
+p {
+	/* pour centrer le texte */
+	max-width: 600px;
+	margin: 0 auto 1rem;
+}
+
+/*===========================
+FOOTER 
+============================*/
+
 footer {
 	/* footer position.placement */
 	left: 0;
@@ -120,7 +131,50 @@ footer {
 	color: aliceblue;
 	
 	display: flex;
-	align-items: stretch;
 	justify-content: space-around;
 	padding: 50px;
 }
+.footerHeader {
+	font-weight: 900;
+	margin: 0 0 10px 0;
+}
+
+/*===========================
+FOOTER left
+============================*/
+footer ul {
+	/* ul a une marge interieur solution pour l'enlever */
+	margin: 0;
+	padding: 0;
+}
+footer a {
+	text-decoration: none;
+	color: aliceblue
+}
+footer li {
+	list-style: none;
+}
+.social-links {
+	display: flex;
+	justify-content: space-around;
+}
+.social-links :hover {
+	transform: scale(1.1);
+	tran;
+}
+/*===========================
+FOOTER mid
+============================*/
+.footer-mid img {
+	/* pour reduire la taille du panier a 150px. meilleur rendu */
+	width: 150px;
+	height: 150px;
+}
+
+.footer-mid :hover {
+	transition: ease-in;
+	transform: scale(1.2);
+}
+
+
+
