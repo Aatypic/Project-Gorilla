@@ -145,12 +145,6 @@ HEADER
 
 
 
-
-
-
-article {
-	border: 1px solid blue;
-}
 aside {
 	border: 1px solid grey;
 }
@@ -160,14 +154,6 @@ p {
 	max-width: 600px;
 	margin: 0 auto 1rem;
 }
-
-
-
-
-
-
-
-
 
 
 /*===========================
@@ -233,7 +219,7 @@ FOOTER mid
 
 .footer-mid :hover {
 	transition: ease-in;
-	//transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 
