@@ -1,0 +1,249 @@
+/*===========================
+COLORS // FONTS in General
+-rouge NBA #C9082A;
+-bleu NBA; #17408B;
+
+-footer bleuté #252a47
+
+
+$font-family: 'Lemonada', cursive;
+============================*/
+/*===========================
+NAV BAR
+============================*/
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: #C9082A; 
+	font-family: 'Poppins', sans-serif;
+}
+
+.logo h1 {
+	color: #edffea;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 22px;
+}
+
+.logo h3 {
+	font-family: 'Pacifico', cursive;
+}
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+}
+.nav-links li {
+	list-style: none;
+}
+.nav-links a {
+	color: #edffea;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+
+}
+.burger {
+	display: none;
+	cursor: pointer;
+}
+
+.burger div {
+	width: 25px;
+	height: 3px;
+	background-color: #edffea;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px,6px);
+	background-color: rgb(248, 229, 166);
+}
+.toggle .line2 {
+	opacity: 0;
+}
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+	background-color:rgb(248, 229, 166);
+}
+
+/*===========================
+BODY
+============================*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+    top: 0;
+	left: 0;
+	margin: 0;
+}
+
+
+/*===========================
+MAIN PAGE
+============================*/
+
+main { /* The main content area is at least 100vh tall.
+		Most sites are anyway, but just to be safe.
+		TLDR: du coup la page fait forcement 100vh. */
+	min-height: 100vh;
+	/* need a solid bg to hide the footer 1st. */
+	background: rgb(241, 241, 241);
+	/* The footer comes after the main content area in the HTML,
+	so to make sure the main content area sits on top,
+	you’ll need a little relative positioning and z-index.*/
+	position: relative;
+	z-index: 1;
+
+	/*box-shadow: 0 1rem 3rem #000;*/
+
+	/* petite marge interieure des blocs/textes, 
+	pour pas que ca colle les bordures de page*/
+	/*padding: 1rem; */
+
+
+}
+/*===========================
+HEADER
+============================*/
+.header {
+	background-image: url('images/ball.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	box-shadow: inset -3px 1rem 3rem 7px #000;
+}
+.overlay {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+
+.description h2 {
+	color: rgb(252, 250, 250);
+}
+
+.description p {
+	color: #fff;
+	font-size: 1.3rem;
+	white-space: nowrap; /* ne pas aller a la ligne, # le footer de amazon*/
+	
+}
+
+.description .btn-primary {
+	/* ecart entre texte et button*/
+	margin-top: 2vh;
+	border: 1px solid #252a47;
+	background: #8598ff;
+	border-radius: 0;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.description .btn-primary:hover {
+	border: 2px solid #fff;
+	background: #C9082A;
+	border-radius: .25rem;
+}
+
+
+/*===========================
+ARTICLE debut
+============================*/
+
+article p, h2, h4 {
+	/* pour centrer le texte */
+	max-width: 600px;
+	margin: 0 auto 1rem;
+}
+
+
+/*===========================
+FOOTER 
+============================*/
+
+footer {
+	/* footer position.placement */
+	left: 0;
+	bottom: 0;
+	position: sticky;
+	width: 100%;
+	
+	background: #252a47;
+
+	/* footer text in */
+	
+	color: aliceblue;
+	
+	display: flex;
+	justify-content: space-around;
+	padding: 50px;
+}
+.footerHeader {
+	font-weight: 900;
+	margin: 0 0 10px 0;
+}
+
+/*===========================
+FOOTER left
+============================*/
+
+footer ul {
+	/* ul a une marge interieur solution pour l'enlever */
+	margin: 0;
+	padding: 0;
+}
+footer a {
+	text-decoration: none;
+	color: aliceblue
+}
+footer li {
+	list-style: none;
+}
+.social-links {
+	display: flex;
+	justify-content: space-around;
+}
+.social-links :hover {
+	transform: scale(1.1);
+}
+
+/*===========================
+FOOTER mid
+============================*/
+
+.footer-mid img {
+	/* pour reduire la taille du panier a 150px. meilleur rendu */
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.footer-mid :hover {
+	transition: ease-in;
+	transform: scale(1.2);
+}
+
+
+.footer-right li {
+	margin: 10px 0px; /* (valeur haut+bas)(valeur droite+gauche) */
+}

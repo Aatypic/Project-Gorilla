@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Gorilla</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- petit icone dans l'onglet navigateur.-->
+    <link rel="icon" href="images/favicon-ball-3stripes.ico" sizes="16x16" type="image/ico">
 </head>
 <body>
     <!-- MENU NAVBAR -->
@@ -15,10 +19,10 @@
         </div>
 
         <ul class="nav-links">
-          <li><a href="#">Concept</a></li>
-          <li><a href="#">Video</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Reservation</a></li>
+          <li><a href="concept.html">Concept</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
         </ul>
         <div class="burger">
           <div class="line1"></div>
@@ -29,8 +33,13 @@
     <!-- START main page -->
     <main>
       <!-- IMAGE SLIDER -->
-      <header>
-      <h2>Une image ou un slide</h2>
+      <header class="page-header header container-fluid">
+        <div class="overlay"></div>
+        <div class="description">
+          <h2>Looking to ball ?</h2>
+          <p>Alone or with friends, you will always find teamates on our courts</p>
+          <a class="btn btn-primary" href="#" role="button">C'est parti !</a>
+        </div>
       </header>
     
       
@@ -75,9 +84,13 @@
     <!--END footer-->
     
     <!--script-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
 
 <!--style="width: 64px; height: 64px;"-->
+<!-- <span>Photo by <a href="https://unsplash.com/@echaparro?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Edgar Chaparro</a> on
+  <a href="https://unsplash.com/s/photos/basketball-court?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>-->
