@@ -20,11 +20,15 @@ nav {
 	font-family: 'Poppins', sans-serif;
 }
 
-.logo {
+.logo h1 {
 	color: #edffea;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-size: 22px;
+}
+
+.logo h3 {
+	font-family: 'Pacifico', cursive;
 }
 .nav-links {
 	display: flex;
@@ -143,13 +147,30 @@ HEADER
 	
 }
 
-
-
-aside {
-	border: 1px solid grey;
+.description .btn-primary {
+	/* ecart entre texte et button*/
+	margin-top: 2vh;
+	border: 1px solid #252a47;
+	background: #8598ff;
+	border-radius: 0;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-p {
+.description .btn-primary:hover {
+	border: 2px solid #fff;
+	background: #C9082A;
+	border-radius: .25rem;
+}
+
+
+/*===========================
+ARTICLE debut
+============================*/
+
+article p, h2, h4 {
 	/* pour centrer le texte */
 	max-width: 600px;
 	margin: 0 auto 1rem;
